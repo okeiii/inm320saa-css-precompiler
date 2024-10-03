@@ -1,0 +1,19 @@
+{
+  "name": "assign3-css-precomiler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "goserver": "lite-server --baseDir=\"public\"",
+    "sassy": "sass --watch src/scss:public/assets/css",
+    "start": "concurrently \"npm run goserver\" \"npm run sassy\""
+  },
+  "keywords": [],
+  "author": "Keilly Ruth Panis",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "lite-server": "^2.6.1",
+    "sass": "^1.79.4"
+  }
+}
